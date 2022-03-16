@@ -57,7 +57,7 @@ class DataLoader:
         countries = list(countries)
         self.gdp_pc[countries].plot()
         plt.xlabel("Year")
-        plt.ylabel("GDP per capita")
+        plt.ylabel("GDP per capita in USD")
 
     def plot_ppp(self, *countries: str) -> None:
         countries = list(countries)
