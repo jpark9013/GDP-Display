@@ -30,7 +30,7 @@ class DataLoader:
         DataLoader.download_last(filename=self.filename)
         self.viewer = weo.WEO(self.filename)
 
-        args = {"start_year": 1980, "end_year": 2026}
+        args = {"start_year": 1980, "end_year": 2021}
         self.gdp = self.viewer.gdp_usd(**args)  # in billions USD
         self.gdp_pc = self.viewer.gdp_pc_usd(**args)  # in USD
         self.ppp = self.viewer.gdp_ppp(**args)  # in billions

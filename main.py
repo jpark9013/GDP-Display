@@ -28,7 +28,8 @@ class GUI:
                        [sg.Combo(["GDP", "GDP Per Capita", "PPP"], key="combo", default_value="GDP")],
                        [sg.Column(self.column_layout, key="column")],
                        [sg.Button("Generate Plot", key="gen"), sg.Exit()]]
-        self.window = sg.Window("Plot GDP", self.layout, finalize=True, element_justification="center")
+        self.window = sg.Window("Plot GDP", self.layout, finalize=True, element_justification="center",
+                                font=("Arial", 11))
         self.rows = 0
 
     def gen(self, values):
